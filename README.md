@@ -9,6 +9,7 @@ In this project we used CentOS Stream 8-streamn, a single VM of MINIMUM 12 GB RA
 FQDN of machine openstack.lab.local, so we should edit /etc/hosts file.
 
 ## 2. Machine preparation :
+- Enabling nested virtualization
 <img width="533" alt="image" src="https://user-images.githubusercontent.com/59062315/227531020-788b19c2-594a-4769-afef-a28396233404.png">
 
 
