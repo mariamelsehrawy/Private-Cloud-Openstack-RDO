@@ -5,9 +5,8 @@ You can know more about openstack through the following link - https://docs.open
 
 ## 1. Set Up Your Environment
 
-Use CentOS Stream 8-stream.
-A single VM of MINIMUM 12 GB RAM, 2 CPUs and 2 NICs
-This lab uses FQDN of openstack.lab.local, you should edit /etc/hosts file
+In this project we used CentOS Stream 8-streamn, a single VM of MINIMUM 12 GB RAM, 2 CPUs and 2 NICs
+FQDN of machine openstack.lab.local, so we should edit /etc/hosts file.
 
 ## 2. Machine preparation :
 <img width="533" alt="image" src="https://user-images.githubusercontent.com/59062315/227531020-788b19c2-594a-4769-afef-a28396233404.png">
