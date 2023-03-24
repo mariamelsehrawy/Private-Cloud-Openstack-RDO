@@ -47,13 +47,29 @@ Firstly, we need to check the hostname, and check if we can reach the internet o
 <img width="438" alt="image" src="https://user-images.githubusercontent.com/59062315/227540100-0ce683ab-db60-4dfb-8e84-21c925067589.png">
 
 
-4.2- Disable and stop firewalld
+4.2- Disable and stop firewalld:
+
+```
+ systemctl disable firewalld 
+ ```
+ ```
+ systemctl stop firewalld 
+ ```
+ ```
+ systemctl status firewalld
+ ```
 
 <img width="540" alt="image" src="https://user-images.githubusercontent.com/59062315/227540211-bab0ac47-bdb6-4282-9a56-8679026a5185.png">
 
 
-4.3- Disable SeLinux
+4.3- Disable SeLinux:
 
+```
+setenforce 0
+```
+```
+sed -i 's/SELINUX=.*/SELINUX=disabled/' /etc/selinux/config
+```
 
 <img width="466" alt="image" src="https://user-images.githubusercontent.com/59062315/227540273-8d7949a5-bb8b-4214-9d96-9d6b9b03aebb.png">
 
@@ -61,19 +77,46 @@ Firstly, we need to check the hostname, and check if we can reach the internet o
 
 
 4.4- Disable and stop Networkmanager
+```
+systemctl disable NetworkManager
+  ```
+ ```
+ systemctl stop NetworkManager 
+  ```  
+ ```
+ systemctl status NetworkManager
+  ```
 
 <img width="540" alt="image" src="https://user-images.githubusercontent.com/59062315/227540344-1ca8126e-ed00-4ccf-85e6-3f52c6535cf1.png">
 
 
 4.5- Download network-scripts:
 
+```
+dnf install network-scripts -y
+```
+
 <img width="540" alt="image" src="https://user-images.githubusercontent.com/59062315/227540476-69c8fb70-e4d1-4ff2-b7f0-0ba82ddc1cc7.png">
 
 4.6- Enable and Start network-scripts:
+```
+systemctl enable network
+```
+```
+systemctl start network 
+```
+```
+systemctl status network
+```
 
 <img width="540" alt="image" src="https://user-images.githubusercontent.com/59062315/227540752-5abeaa22-71ff-49d5-9c83-9fb70346d424.png">
 
-4.7- Enable power tools and install yoga,
+4.7- Enable power tools and install yoga:
+
+```
+dnf config-manager --enable powertools 
+dnf install -y centos-release-openstack-yoga
+```
 
 <img width="540" alt="image" src="https://user-images.githubusercontent.com/59062315/227542844-b2893efc-7ea2-4546-ad77-ca3ed50e84ea.png">
 
