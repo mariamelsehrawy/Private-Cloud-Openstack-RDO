@@ -1,6 +1,7 @@
 # Private-Cloud-Openstack-RDO
 ## A Project on how to build a private cloud using Openstack RDO.
 OpenStack is a free, open standard cloud computing platform. It is mostly deployed as infrastructure-as-a-service in both public and private clouds where virtual servers and other resources are made available to users and in this project we will build Our Platform which includes full network topology and instances.
+You can know more about openstack through the following link - https://docs.openstack.org/yoga/
 
 ## 1. Set Up Your Environment
 
